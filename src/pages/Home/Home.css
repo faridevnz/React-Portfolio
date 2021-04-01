@@ -1,0 +1,27 @@
+.home {
+    width: 100vw;
+    height: max-content;
+    background-color: #FBFBFB;
+    padding: 7% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.__container {
+    height: 200vh;
+    width: 80%;
+    background-color: #FBFBFB;
+    box-shadow: 0 0 50px #00000020;
+    box-sizing: border-box;
+}
+
+.__body {
+    padding: 0 10%;
+}
+
+.--title {
+    margin-top: 5%;
+    font-size: 80px;
+    font-weight: 700;
+    color: rgb(19, 19, 19);
+}
