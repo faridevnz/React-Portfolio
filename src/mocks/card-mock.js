@@ -8,7 +8,9 @@ export const MockedCards = [
             description: 
                 `Ullamco eu reprehenderit irure sunt laboris adipisicing aute aliquip minim fugiat 
                 reprehenderit quis.Laboris aute elit in laboris sint excepteur cupidatat.
-                Id incididunt esse ullamco nisi irure`,
+                Id incididunt esse ullamco nisi irure.
+                Mollit duis reprehenderit culpa aliqua pariatur duis exercitation ex veniam.
+                Commodo proident excepteur non occaecat id consequat reprehenderit fugiat consequat qui.`,
             imagePath: 'https://picsum.photos/id/50/600/400'
         }
     },
