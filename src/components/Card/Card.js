@@ -4,7 +4,7 @@ import { cardDimentsion } from './models/card-dimensions';
 export const Card = ({ dimension = cardDimentsion.SMALL, data }) => {
     return (
         <div className={`card card--${dimension}`}>
-            <img className="__image" src={data.imagePath} />
+            <img className="__image" src={data.imagePath} alt="" />
             <div className="__info">
                 <div className="date">
                     {data.date}
