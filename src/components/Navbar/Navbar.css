@@ -16,12 +16,17 @@
     font-weight: 900;
     transition: all 100ms linear;
     cursor: pointer;
+    text-transform: uppercase;
 }
 .__link:hover {
     color: rgb(228, 93, 139);
 }
 .__link:hover > .--underline {
     width: 100%;
+}
+
+.--active {
+    color: rgb(228, 93, 139);
 }
 
 .--underline {
