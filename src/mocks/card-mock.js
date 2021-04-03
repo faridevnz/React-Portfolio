@@ -9,7 +9,7 @@ export const MockedCards = [
                 `Ullamco eu reprehenderit irure sunt laboris adipisicing aute aliquip minim fugiat 
                 reprehenderit quis.Laboris aute elit in laboris sint excepteur cupidatat.
                 Id incididunt esse ullamco nisi irure`,
-            imagePath: 'https://picsum.photos/600/400'
+            imagePath: 'https://picsum.photos/id/50/600/400'
         }
     },
     // small card
@@ -23,7 +23,7 @@ export const MockedCards = [
                 reprehenderit quis.Laboris aute elit in laboris sint excepteur cupidatat.
                 Id incididunt esse ullamco nisi irure.Nisi consequat minim ex pariatur id 
                 consectetur voluptate nulla deserunt nisi`,
-            imagePath: 'https://picsum.photos/600/400'
+            imagePath: 'https://picsum.photos/id/20/600/400'
         }
     },
     {
@@ -35,7 +35,7 @@ export const MockedCards = [
                 `Ullamco eu reprehenderit irure sunt laboris adipisicing aute aliquip minim fugiat 
                 reprehenderit quis.Laboris aute elit in laboris sint excepteur cupidatat.
                 Id incididunt esse ullamco nisi irure`,
-            imagePath: 'https://picsum.photos/600/400'
+            imagePath: 'https://picsum.photos/id/40/600/400'
         }
     },
     {
@@ -46,7 +46,7 @@ export const MockedCards = [
             description: 
                 `Ullamco eu reprehenderit irure sunt laboris adipisicing aute aliquip minim fugiat 
                 reprehenderit quis.Laboris aute elit in laboris sint excepteur cupidatat`,
-            imagePath: 'https://picsum.photos/600/400'
+            imagePath: 'https://picsum.photos/id/30/600/400'
         }
     },
     {
@@ -59,7 +59,7 @@ export const MockedCards = [
                 reprehenderit quis.Laboris aute elit in laboris sint excepteur cupidatat.
                 Id incididunt esse ullamco nisi irure.Nisi consequat minim ex pariatur id 
                 consectetur voluptate nulla deserunt nisi`,
-            imagePath: 'https://picsum.photos/600/400'
+            imagePath: 'https://picsum.photos/id/130/600/400'
         }
     },
     {
@@ -72,7 +72,7 @@ export const MockedCards = [
                 reprehenderit quis.Laboris aute elit in laboris sint excepteur cupidatat.
                 Id incididunt esse ullamco nisi irure.Nisi consequat minim ex pariatur id 
                 consectetur voluptate nulla deserunt nisi`,
-            imagePath: 'https://picsum.photos/600/400'
+            imagePath: 'https://picsum.photos/id/70/600/400'
         }
     },
     {
@@ -83,7 +83,7 @@ export const MockedCards = [
             description: 
                 `Ullamco eu reprehenderit irure sunt laboris adipisicing aute aliquip minim fugiat 
                 reprehenderit quis.Laboris aute elit in laboris sint excepteur cupidatat`,
-            imagePath: 'https://picsum.photos/600/400'
+            imagePath: 'https://picsum.photos/id/80/600/400'
         }
     },
     {
@@ -95,7 +95,7 @@ export const MockedCards = [
                 `Ullamco eu reprehenderit irure sunt laboris adipisicing aute aliquip minim fugiat 
                 reprehenderit quis.Laboris aute elit in laboris sint excepteur cupidatat.
                 Id incididunt esse ullamco nisi irure`,
-            imagePath: 'https://picsum.photos/600/400'
+            imagePath: 'https://picsum.photos/id/90/600/400'
         }
     }
 ]
