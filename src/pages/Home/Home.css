@@ -8,7 +8,8 @@
 }
 
 .__container {
-    height: 200vh;
+    height: max-content;
+    padding-bottom: 100px;
     width: 80%;
     background-color: #FBFBFB;
     box-shadow: 0 0 50px #00000020;
@@ -16,12 +17,26 @@
 }
 
 .__body {
-    padding: 0 10%;
+    padding: 0 6%;
 }
 
-.--title {
-    margin-top: 5%;
-    font-size: 80px;
-    font-weight: 700;
-    color: rgb(19, 19, 19);
+.__first-article {
+    margin: 0 0 50px 0;
+}
+
+.__card-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.__card-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.__flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
