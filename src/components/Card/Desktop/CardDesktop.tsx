@@ -1,4 +1,4 @@
-import CardProps from '../Models/props.interface';
+import CardProps from '../models/props.interface';
 import './CardDesktop.scss';
 
 export const CardDesktop = ({ dimension, data }: CardProps) => {

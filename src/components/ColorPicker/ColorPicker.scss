@@ -1,0 +1,42 @@
+.color-picker-trigger {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--primary-fucsia-50);
+    border: 2px solid var(--primary-fucsia);
+    box-sizing: border-box;
+}
+
+.color-picker-window {
+    position: absolute;
+    margin-top: 30px;
+    height: 0px;
+    width: 20px;
+    transition: all 100ms ease-in-out;
+
+    .__color-choise {
+        margin: 5px 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+
+    .--fucsia {
+        background-color: var(--primary-fucsia-50);
+        border: 2px solid var(--primary-fucsia);
+    }
+    .--orange {
+        background-color: var(--primary-orange-50);
+        border: 2px solid var(--primary-orange);
+    }
+    .--azure {
+        background-color: var(--primary-azure-50);
+        border: 2px solid var(--primary-azure);
+    }
+
+}
+
+.--open {
+    height: max-content;
+}

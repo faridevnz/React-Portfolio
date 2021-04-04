@@ -3,7 +3,7 @@ import { ResponsiveContext } from "../../context/ResponsiveContext/ResponsiveCon
 import { useMobile } from "../../hooks/useMobile/useMobile";
 import { CardDesktop } from "./Desktop/CardDesktop";
 import { CardMobile } from "./Mobile/CardMobile";
-import CardProps from "./Models/props.interface";
+import CardProps from "./models/props.interface";
 
 export const Card = ( { dimension, data }: CardProps ) => {
     const [ breakpoint ] = useContext(ResponsiveContext);

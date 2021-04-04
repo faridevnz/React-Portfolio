@@ -1,0 +1,21 @@
+.contacts-container {
+
+    margin-top: 50px;
+
+    .__icon {
+
+        height: 40px;
+        cursor: pointer;
+        margin: 0 5px;
+
+        path {
+            transition: all 100ms linear;
+        }
+
+        &:hover > path {
+            fill: var(--primary-fucsia)
+        }
+
+    }
+
+}
