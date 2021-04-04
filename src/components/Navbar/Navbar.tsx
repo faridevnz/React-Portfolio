@@ -2,6 +2,7 @@ import './Navbar.scss';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { breadcrumbs } from './models/Breadcrumbs/breadcrumbs';
+import { ColorPicker } from '../ColorPicker/ColorPicker';
 
 export const Navbar = () => {
     // state
@@ -13,11 +14,15 @@ export const Navbar = () => {
         <div className="navbar">
             {/* breadcrumbs */}
             {breadcrumbs.map((item, index) => (
-                <Link to={item.link} onClick={onChangeSelected.bind(this, index)} className={`__link ${index === selected ? '--active' : null}`} key={index}>
+                <Link to={item.link} onClick={onChangeSelected.bind(this, index)} className={`__link ${index === selected ? '--active' : ''}`} key={index}>
                     <div >{item.label}</div>
                     <div className="--underline"></div>
                 </Link>
             ))}
+            <div className="__link">
+                <ColorPicker />
+                <div className="--underline"></div>
+            </div>
         </div>
     );
 
