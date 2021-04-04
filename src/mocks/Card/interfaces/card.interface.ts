@@ -1,4 +1,4 @@
-import { CardSize, ICardData } from "../../../components/Card/Models/card.interface";
+import { CardSize, ICardData } from "../../../components/Card/models/card.interface";
 
 interface ICard {
     size: CardSize,

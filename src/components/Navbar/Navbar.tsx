@@ -1,7 +1,7 @@
 import './Navbar.scss';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { breadcrumbs } from './Models/Breadcrumbs/breadcrumbs';
+import { breadcrumbs } from './models/Breadcrumbs/breadcrumbs';
 
 export const Navbar = () => {
     // state

@@ -1,0 +1,36 @@
+.box-icon {
+
+    width: 250px;
+    height: 100px;
+    background-color: var(--background-light);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1%;
+    box-sizing: border-box;
+    box-shadow: 0 0 40px var(--shadow-dark-20);
+
+    .__icon {
+        height: 45%;
+    }
+
+    .__content {
+
+        margin: 0 10px;
+
+        .label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-grey);
+            margin-left: 5px;
+        }
+        .text {
+            font-size: 30px;
+            font-weight: 800;
+            color: var(--text-dark);
+        }
+
+    }
+
+}
