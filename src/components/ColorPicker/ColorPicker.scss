@@ -22,21 +22,21 @@
         box-sizing: border-box;
     }
 
-    .--fucsia {
-        background-color: var(--primary-fucsia-50);
-        border: 2px solid var(--primary-fucsia);
-    }
-    .--orange {
-        background-color: var(--primary-orange-50);
-        border: 2px solid var(--primary-orange);
-    }
-    .--azure {
-        background-color: var(--primary-azure-50);
-        border: 2px solid var(--primary-azure);
-    }
-
 }
 
 .--open {
     height: max-content;
+}
+
+.--fucsia {
+    background-color: var(--primary-fucsia-50);
+    border: 2px solid var(--primary-fucsia);
+}
+.--orange {
+    background-color: var(--primary-orange-50);
+    border: 2px solid var(--primary-orange);
+}
+.--azure {
+    background-color: var(--primary-azure-50);
+    border: 2px solid var(--primary-azure);
 }

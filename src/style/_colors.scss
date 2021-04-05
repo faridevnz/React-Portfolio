@@ -23,5 +23,26 @@
     --shadow-dark-15: #282C3415;
     --shadow-dark-20: #282C3420;
 
+}
 
+// text colors
+.--color-fucsia {
+    color: var(--primary-fucsia) !important;
+}
+.--color-orange {
+    color: var(--primary-orange)  !important;
+}
+.--color-azure {
+    color: var(--primary-azure)  !important;
+}
+
+// background colors
+.--bg-fucsia {
+    background-color: var(--primary-fucsia)  !important;
+}
+.--bg-orange {
+    background-color: var(--primary-orange)  !important;
+}
+.--bg-azure {
+    background-color: var(--primary-azure)  !important;
 }

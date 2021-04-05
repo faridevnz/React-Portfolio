@@ -5,27 +5,30 @@ import { Blog } from './pages/Blog/Blog';
 import { Navbar } from './components/Navbar/Navbar';
 import { Contributions } from './pages/Contributions/Contributions';
 import { Projects } from './pages/Projects/Projects';
+import { ThemeProvider } from './context/ThemeContext/ThemeContext';
 
 function App() {
   return (
     <ResponsiveProvider>
-      <Router>
-          <Navbar></Navbar>
-          <Switch>
-            <Route path="/blog">
-              <Blog></Blog>
-            </Route>
-            <Route path="/contributions">
-              <Contributions></Contributions>
-            </Route>
-            <Route path="/projects">
-                <Projects></Projects>
-            </Route>
-            <Route path="/">
-              <Home></Home>
-            </Route>
-          </Switch>
-      </Router>
+      <ThemeProvider>
+        <Router>
+            <Navbar></Navbar>
+            <Switch>
+              <Route path="/blog">
+                <Blog />
+              </Route>
+              <Route path="/contributions">
+                <Contributions />
+              </Route>
+              <Route path="/projects">
+                  <Projects />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+        </Router>
+      </ThemeProvider>
     </ResponsiveProvider>
   );
 }

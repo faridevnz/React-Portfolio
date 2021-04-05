@@ -16,6 +16,7 @@
             p {
     
                 &:nth-child(2) {
+                    transition: all 100ms linear;
                     color: var(--primary-fucsia)
                 }
     
@@ -30,6 +31,7 @@
 
         .__email {
 
+            transition: all 100ms linear;
             color: var(--primary-fucsia);
             padding-left: 20px;
 
