@@ -1,6 +1,4 @@
-import Breadcrumbs from "./breadcrumbs.interface";
-
-export const breadcrumbs: Breadcrumbs[] = [
+export const breadcrumbs = [
     {
         'label': 'home',
         'link': '/'

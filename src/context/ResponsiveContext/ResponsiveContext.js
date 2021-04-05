@@ -1,8 +1,10 @@
-import { ComponentState, createContext, useState } from "react";
+import { createContext, useState } from "react";
 
-const ResponsiveContext = createContext<ComponentState>({});
+// Context
+const ResponsiveContext = createContext(1000);
 
-const ResponsiveProvider = ( props: any ) => {
+// Context Provider
+const ResponsiveProvider = props => {
     // state
     const [ breakpoint ] = useState(1000);
     // render
