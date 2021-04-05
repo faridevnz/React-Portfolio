@@ -1,12 +1,15 @@
 .contacts-container {
 
     margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
 
     .__icon {
 
         height: 40px;
         cursor: pointer;
-        margin: 0 5px;
 
         path {
             transition: all 100ms linear;

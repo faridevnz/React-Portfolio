@@ -18,9 +18,10 @@ export const Home = () => {
                     <p>full-stack</p>
                     <p className={`--color-${theme.color}`}>developer</p>
                 </div>
-                <div className={`__email --color-${theme.color}`}>
+                <a href="mailto:alessio.farinelli.developer@gmail.com" className={`__email --color-${theme.color}`}>
                     alessio.farinelli.developer@gmail.com
-                </div>
+                    <div className="__email--underline"></div>
+                </a>
                 <ContactBox />
             </div>
         </div>
