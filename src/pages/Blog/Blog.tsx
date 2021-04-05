@@ -5,6 +5,7 @@ import { BlogDesktop } from './Desktop/BlogDesktop';
 import { BlogMobile } from './Mobile/BlogMobile';
 
 export const Blog = () => {
+    // state and context
     const [ breakpoint ] = useContext(ResponsiveContext);
     const isMobile = useMobile(breakpoint);
     // render

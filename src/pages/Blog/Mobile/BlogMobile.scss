@@ -47,10 +47,10 @@
 
         .__tab--selected {
 
-            color: rgb(16, 52, 255);
+            color: var(--primary-azure);
 
             .__tab-selector {
-                background-color: rgb(16, 52, 255);
+                background-color: var(--primary-azure)
             }
 
         }

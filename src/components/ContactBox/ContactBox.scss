@@ -12,8 +12,14 @@
             transition: all 100ms linear;
         }
 
-        &:hover > path {
-            fill: var(--primary-fucsia)
+        &--fucsia:hover > path {
+            fill: var(--primary-fucsia);
+        }
+        &--orange:hover > path {
+            fill: var(--primary-orange);
+        }
+        &--azure:hover > path {
+            fill: var(--primary-azure);
         }
 
     }

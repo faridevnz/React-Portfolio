@@ -2,8 +2,14 @@
 
     &:hover {
         background-color: hsl(0, 0%, 95%);
-        .title {
-            color: rgb(224, 77, 126);
+        .title--fucsia {
+            color: var(--primary-fucsia);
+        }
+        .title--orange {
+            color: var(--primary-orange);
+        }
+        .title--azure {
+            color: var(--primary-azure);
         }
     }
     
@@ -96,7 +102,15 @@
                 font-size: 42px;
                 font-weight: 800;
                 transition: all 100ms linear;
-                color: rgb(224, 77, 126);
+                &--fucsia {
+                    color: var(--primary-fucsia);
+                }
+                &--orange {
+                    color: var(--primary-orange);
+                }
+                &--azure {
+                    color: var(--primary-azure);
+                }
             }
             .description {
                 font-size: 20px;

@@ -20,17 +20,20 @@
         color: rgb(197, 197, 197);
         text-decoration: none;
 
-        &:hover {
-            color: var(--primary-fucsia);
-        }
         &:hover > .--underline {
             width: 100%;
         }
 
     }
 
-    .--active {
+    .--active-fucsia {
         color: var(--primary-fucsia);
+    }
+    .--active-orange {
+        color: var(--primary-orange);
+    }
+    .--active-azure {
+        color: var(--primary-azure);
     }
 
     .--underline {
