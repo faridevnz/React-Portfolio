@@ -1,4 +1,14 @@
-import { CardSize, ICardData } from "../../../components/Card/models/card.interface";
+enum CardSize {
+    'SMALL' = 'small', 
+    'LARGE' = 'large'
+}
+
+interface ICardData {
+    date: string,
+    title: string,
+    description: string,
+    imagePath: string
+}
 
 interface ICard {
     size: CardSize,
