@@ -23,11 +23,5 @@
   "include": [
     "src"
   ],
-  "baseUrl": ".",
-  "paths": {
-    "*": [
-      "*",
-      "src/*"
-    ]
-  }
+  "baseUrl": "src"
 }
