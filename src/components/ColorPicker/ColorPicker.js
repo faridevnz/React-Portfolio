@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
-import { Colors } from '../../context/ThemeContext/models/theme-context.interface';
 import { ThemeContext } from '../../context/ThemeContext/ThemeContext';
 import './ColorPicker.scss'
+import { Colors } from '../../context/ThemeContext/models/colors';
 
 export const ColorPicker = () => {
     // state and context
@@ -9,8 +9,8 @@ export const ColorPicker = () => {
     const [theme, setTheme] = useContext(ThemeContext);
     // functions
     const onTrigger = () => { setOpen(prev => !prev) }
-    const onChangeColor = (color: Colors) => {
-        setTheme((prev: any) => { return {...prev, color: color} });
+    const onChangeColor = color => {
+        setTheme(prev => { return {...prev, color: color} });
         onTrigger();
     }
     // render

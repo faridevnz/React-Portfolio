@@ -1,9 +1,8 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../../../context/ThemeContext/ThemeContext';
-import CardProps from '../models/props.interface';
 import './CardDesktop.scss';
 
-export const CardDesktop = ({ dimension, data }: CardProps) => {
+export const CardDesktop = ({ dimension, data }) => {
     // state and context
     const [theme] = useContext(ThemeContext);
     // render

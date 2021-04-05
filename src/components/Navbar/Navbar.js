@@ -1,16 +1,16 @@
-import './Navbar.scss';
 import { Link } from 'react-router-dom';
-import { breadcrumbs } from './breadcrumbs';
+import { breadcrumbs } from './model/breadcrumbs';
 import { ColorPicker } from '../ColorPicker/ColorPicker';
 import { ThemeContext } from '../../context/ThemeContext/ThemeContext';
 import { useContext, useState } from 'react';
+import './Navbar.scss';
 
 export const Navbar = () => {
     // state and context
     const [selected, setSelected] = useState(0);
     const [theme] = useContext(ThemeContext);
     // functions
-    const onChangeSelected = (index: number) => { setSelected(index) };
+    const onChangeSelected = index => { setSelected(index) };
     // render 
     return (
         <div className="navbar">

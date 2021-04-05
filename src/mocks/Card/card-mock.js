@@ -1,6 +1,6 @@
-import { ICard, CardSize } from './interfaces/card.interface';
+import { CardSize } from '../../components/Card/model/card-size';
 
-export const MockedCards: ICard[] = [
+const MockedCards = [
     // large card
     {
         size: CardSize.LARGE,
@@ -103,3 +103,5 @@ export const MockedCards: ICard[] = [
         }
     }
 ]
+
+export { MockedCards };

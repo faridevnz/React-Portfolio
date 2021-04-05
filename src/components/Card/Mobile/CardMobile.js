@@ -1,7 +1,6 @@
-import CardProps from '../models/props.interface';
 import './CardMobile.scss'
 
-export const CardMobile = ({ dimension, data }: CardProps) => {
+export const CardMobile = ({ dimension, data }) => {
     return(
         <div className={`card-mobile card-mobile--${dimension}`}>
             <div className="__image-container">
