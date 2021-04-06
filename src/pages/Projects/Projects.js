@@ -1,5 +1,7 @@
 export const Projects = () => {
     return(
-        <div>Projects works</div>
+        <div>
+            Projects works
+        </div>
     );
 }

@@ -8,6 +8,12 @@
 
     .__left {
 
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
         .__job-title {
 
             margin: 30px 0 15px 0;
