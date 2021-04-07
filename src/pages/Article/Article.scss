@@ -1,0 +1,10 @@
+.article {
+
+    width: 100vw;
+    min-height: calc( 100vh - var(--navbar-height) );
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--background-light);
+
+}

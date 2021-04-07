@@ -6,6 +6,7 @@ import { Navbar } from './components/Navbar/Navbar';
 import { Contributions } from './pages/Contributions/Contributions';
 import { Projects } from './pages/Projects/Projects';
 import { ThemeProvider } from './context/ThemeContext/ThemeContext';
+import { Article } from './pages/Article/Article';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
               </Route>
               <Route path="/projects">
                   <Projects />
+              </Route>
+              <Route path="/article-example">
+                <Article />
               </Route>
               <Route path="/">
                 <Home />

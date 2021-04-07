@@ -1,0 +1,18 @@
+.contributions {
+
+    width: 100vw;
+    height: calc( 100vh - var(--navbar-height) );
+    background-color: var(--background-light);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        transition: all 100ms linear;
+        font-weight: 800;
+        font-size: 40px;
+        margin-bottom: var(--navbar-height);
+    }
+
+}
