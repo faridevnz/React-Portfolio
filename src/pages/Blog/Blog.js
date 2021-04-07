@@ -1,15 +1,15 @@
 import { useContext } from 'react';
-import { ResponsiveContext } from '../../context/ResponsiveContext/ResponsiveContext';
+// import { ResponsiveContext } from '../../context/ResponsiveContext/ResponsiveContext';
 import { ThemeContext } from '../../context/ThemeContext/ThemeContext';
-import { useMobile } from '../../hooks/useMobile/useMobile';
-import { BlogDesktop } from './Desktop/BlogDesktop';
-import { BlogMobile } from './Mobile/BlogMobile';
+// import { useMobile } from '../../hooks/useMobile/useMobile';
+// import { BlogDesktop } from './Desktop/BlogDesktop';
+// import { BlogMobile } from './Mobile/BlogMobile';
 import './Blog.scss';
 
 export const Blog = () => {
-    const [breakpoint] = useContext(ResponsiveContext);
+    // const [breakpoint] = useContext(ResponsiveContext);
     const [theme] = useContext(ThemeContext);
-    const isMobile = useMobile(breakpoint);
+    // const isMobile = useMobile(breakpoint);
     // render
     // return isMobile 
     //     ? <BlogMobile></BlogMobile>
