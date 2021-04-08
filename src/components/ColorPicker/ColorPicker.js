@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { ThemeContext } from '../../context/ThemeContext/ThemeContext';
 import './ColorPicker.scss'
 import { Colors } from '../../context/ThemeContext/models/colors';
+import { Themes } from '../../context/ThemeContext/models/themes';
 
 export const ColorPicker = () => {
     // state and context
@@ -13,6 +14,10 @@ export const ColorPicker = () => {
         setTheme(prev => { return {...prev, color: color} });
         onTrigger();
     }
+    const onChangeTheme = theme => {
+        setTheme(prev => { return {...prev, theme: theme} });
+        onTrigger();
+    }
     // render
     return(
         <>
@@ -21,6 +26,8 @@ export const ColorPicker = () => {
                 <div onClick={() => onChangeColor(Colors.FUCSIA)} className={`__color-choise --fucsia ${!isOpen ? 'display-none' : ''}`}></div>
                 <div onClick={() => onChangeColor(Colors.ORANGE)} className={`__color-choise --orange ${!isOpen ? 'display-none' : ''}`}></div>
                 <div onClick={() => onChangeColor(Colors.AZURE)} className={`__color-choise --azure ${!isOpen ? 'display-none' : ''}`}></div>
+                <br />
+                <div onClick={() => onChangeTheme(Themes.DARK)} className={`__color-choise --black ${!isOpen ? 'display-none' : ''}`}></div>
             </div>
         </>
     );

@@ -1,5 +1,9 @@
 .home-body {
 
+    &--light {
+        background-color: black;
+    }
+
     width: 100vw;
     height: calc( 100vh - var(--navbar-height) );
     padding: 0 100px;
