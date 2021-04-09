@@ -6,7 +6,7 @@ export const Contributions = () => {
     const [theme] = useContext(ThemeContext);
     // render
     return(
-        <div className="contributions">
+        <div className={`contributions contributions--${theme.theme}`}>
             <span className={`--color-${theme.color}`}>CONTRIBUTIONS</span>
         </div>
     );

@@ -1,14 +1,19 @@
 .home-body {
 
-    &--light {
-        background-color: black;
-    }
-
     width: 100vw;
     height: calc( 100vh - var(--navbar-height) );
     padding: 0 100px;
     box-sizing: border-box;
-    background-color: var(--background-light);
+    transition: background-color 100ms linear;
+
+    // themes
+    &--light {
+        background-color: var(--background-light);
+    }
+    &--dark {
+        background-color: var(--background-dark);
+        color: var(--text-light);
+    }
 
     .__left {
 
@@ -24,15 +29,16 @@
     
             p {
     
-                &:nth-child(2) {
-                    transition: all 100ms linear;
-                    color: var(--primary-fucsia)
-                }
-    
                 text-transform: uppercase;
                 margin: 0;
                 font-size: 75px;
                 font-weight: 800;
+                transition: color 100ms linear;
+
+                &:nth-child(2) {
+                    transition: all 100ms linear;
+                    color: var(--primary-fucsia)
+                }
     
             }
     

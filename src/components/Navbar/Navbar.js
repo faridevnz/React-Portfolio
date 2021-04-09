@@ -13,7 +13,7 @@ export const Navbar = () => {
     const onChangeSelected = index => { setSelected(index) };
     // render 
     return (
-        <div className="navbar">
+        <div className={`navbar navbar--${theme.theme}`}>
             {/* breadcrumbs */}
             {breadcrumbs.map((item, index) => (
                 <Link to={item.link} onClick={onChangeSelected.bind(this, index)} className={`__link __link--${theme.color} ${index === selected ? `--active-${theme.color}` : ''}`} key={index}>

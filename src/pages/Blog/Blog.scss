@@ -2,11 +2,18 @@
 
     width: 100vw;
     height: calc( 100vh - var(--navbar-height) );
-    background-color: var(--background-light);
-
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 100ms linear;
+
+    // theme
+    &--light {
+        background-color: var(--background-light);
+    }
+    &--dark {
+        background-color: var(--background-dark);
+    }
 
     span {
         transition: all 100ms linear;

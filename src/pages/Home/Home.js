@@ -10,7 +10,7 @@ export const Home = () => {
     const [theme] = useContext(ThemeContext);
     // render
     return(
-        <div className="home-body">
+        <div className={`home-body home-body--${theme.theme}`}>
             {/* left */}
             <div className="__left">
                 <BoxIcon Icon={HiIcon} text="Alessio" label="hi i'm" />

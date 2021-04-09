@@ -11,11 +11,14 @@ export const ColorPicker = () => {
     // functions
     const onTrigger = () => { setOpen(prev => !prev) }
     const onChangeColor = color => {
-        setTheme(prev => { return {...prev, color: color} });
+        setTheme( prev => { return { ...prev, color: color } });
         onTrigger();
     }
-    const onChangeTheme = theme => {
-        setTheme(prev => { return {...prev, theme: theme} });
+    const onToggleTheme = () => {
+        setTheme( prev => { 
+            var newTheme = prev.theme === Themes.DARK ? Themes.LIGHT : Themes.DARK;
+            return { ...prev, theme: newTheme } 
+        });
         onTrigger();
     }
     // render
@@ -27,7 +30,7 @@ export const ColorPicker = () => {
                 <div onClick={() => onChangeColor(Colors.ORANGE)} className={`__color-choise --orange ${!isOpen ? 'display-none' : ''}`}></div>
                 <div onClick={() => onChangeColor(Colors.AZURE)} className={`__color-choise --azure ${!isOpen ? 'display-none' : ''}`}></div>
                 <br />
-                <div onClick={() => onChangeTheme(Themes.DARK)} className={`__color-choise --black ${!isOpen ? 'display-none' : ''}`}></div>
+                <div onClick={() => onToggleTheme()} className={`__color-choise --${theme.theme} ${!isOpen ? 'display-none' : ''}`}></div>
             </div>
         </>
     );

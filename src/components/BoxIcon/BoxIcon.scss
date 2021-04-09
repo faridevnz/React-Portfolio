@@ -2,14 +2,24 @@
 
     width: 250px;
     height: 100px;
-    background-color: var(--background-light);
     border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 1%;
     box-sizing: border-box;
-    box-shadow: 0 0 40px var(--shadow-dark-20);
+    color: var(--text-dark);
+    transition: background-color 100ms linear;
+
+    &--light {
+        background-color: var(--background-light);
+        box-shadow: 0 0 40px var(--shadow-dark-20);
+    }
+    &--dark {
+        background-color: var(--background-dark);
+        box-shadow: 0 0 40px var(--shadow-black-50);
+        color: var(--text-light);
+    }
 
     .__icon {
         height: 40%;
@@ -24,11 +34,11 @@
             font-weight: 600;
             color: var(--text-grey);
             margin-left: 5px;
+            transition: color 100ms linear;
         }
         .text {
             font-size: 30px;
             font-weight: 800;
-            color: var(--text-dark);
         }
 
     }

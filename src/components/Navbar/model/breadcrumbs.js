@@ -15,8 +15,8 @@ export const breadcrumbs = [
         'label': 'projects',
         'link': '/projects'
     },
-    {
-        'label': 'article',
-        'link': '/article-example'
-    }
+    // {
+    //     'label': 'article',
+    //     'link': '/article-example'
+    // }
 ]

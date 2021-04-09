@@ -5,6 +5,13 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: var(--background-light);
+    transition: background-color 100ms linear;
+
+    &--light {
+        background-color: var(--background-light);
+    }
+    &--dark {
+        background-color: var(--background-dark);
+    }
 
 }

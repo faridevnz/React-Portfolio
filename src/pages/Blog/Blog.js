@@ -16,7 +16,7 @@ export const Blog = () => {
     //     : <BlogDesktop></BlogDesktop>
     // render to delete
     return(
-        <div className="blog">
+        <div className={`blog blog--${theme.theme}`}>
             <span className={`--color-${theme.color}`}>BLOG</span>
         </div>
     );

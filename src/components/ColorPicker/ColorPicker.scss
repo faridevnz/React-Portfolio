@@ -40,7 +40,11 @@
     background-color: var(--primary-azure-50);
     border: 2px solid var(--primary-azure);
 }
-.--black {
+.--light {
     background-color: var(--background-dark-50);
     border: 2px solid var(--background-dark);
+}
+.--dark {
+    background-color: var(--background-light-50);
+    border: 2px solid var(--background-light);
 }
