@@ -1,24 +1,39 @@
 .blog-desktop {
 
-    .__container {
-        height: max-content;
-        padding-bottom: 100px;
-        width: 100%;
-        background-color: #FBFBFB;
+    width: 100vw;
+    transition: background-color 100ms linear;
+
+    // theme
+    &--light {
+        background-color: var(--background-light);
+    }
+    &--dark {
+        background-color: var(--background-dark);
+    }
+
+    // text
+    span {
+        transition: all 100ms linear;
+        font-weight: 800;
+        font-size: 40px;
+        margin-bottom: var(--navbar-height);
+    }
+
+    // tab bar
+    .__tab-bar {
+        width: 100vw;
+        padding: 0 60% 0 5%;
+        height: var(--tab-selector-height);
         box-sizing: border-box;
     }
 
-    .__first-article {
-        margin-bottom: 50px;
-    }
-
+    // body
     .__body {
-        padding: 0 7%;
-    }
-
-    .__card-grid {
-        display: grid;
-        grid-template-columns: auto auto auto;
+        width: 100vw;
+        height: calc( 100vh - var(--navbar-height) - var(--tab-selector-height) );
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }

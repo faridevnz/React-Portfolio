@@ -1,0 +1,76 @@
+.tab-selector {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--text-disabled);
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 100ms linear;
+
+    .__tab-delimiter {
+        height: 40%;
+        width: 1.6px;
+        background-color: var(--text-disabled);
+    }
+
+    .__tab {
+
+        margin: 0 15px;
+        transition: color 100ms linear;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .__tab-dot-selector {
+
+            width: 4px;
+            height: 4px;
+            margin-bottom: 12px;
+            border-radius: 50%;
+            background-color: transparent;
+            transition: background-color 100ms linear;
+
+        }
+
+    }
+
+    .__tab--fucsia {
+
+        &:hover,
+        &--selected {
+            color: var(--primary-fucsia);
+        }
+        &--selected .__tab-dot-selector {
+            background-color: var(--primary-fucsia);
+        }
+
+    }
+    .__tab--orange {
+
+        &:hover,
+        &--selected {
+            color: var(--primary-orange);
+        }
+        &--selected .__tab-dot-selector {
+            background-color: var(--primary-orange);
+        }
+
+    }
+    .__tab--azure {
+
+        &:hover,
+        &--selected {
+            color: var(--primary-azure);
+        }
+        &--selected .__tab-dot-selector {
+            background-color: var(--primary-azure);
+        }
+
+    }
+
+}

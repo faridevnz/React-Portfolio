@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export const useMobile = ({ breakpoint }) => {
+export const useMobile = (breakpoint) => {
     // state
     const [ width, setWidth ] = useState(window.innerWidth);
     
@@ -11,5 +11,7 @@ export const useMobile = ({ breakpoint }) => {
     }, []);
 
     // return
+    console.log('width', width);
+    console.log('breakpoint', breakpoint);
     return width < breakpoint;
 }

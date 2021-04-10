@@ -7,7 +7,7 @@ export const Contributions = () => {
     // render
     return(
         <div className={`contributions contributions--${theme.theme}`}>
-            <span className={`--color-${theme.color}`}>CONTRIBUTIONS</span>
+            <span className={`--color-${theme.color}`}>contributions</span>
         </div>
     );
 }

@@ -7,7 +7,7 @@ export const Projects = () => {
     // render
     return(
         <div className={`projects projects--${theme.theme}`}>
-            <span className={`--color-${theme.color}`}>PROJECTS</span>
+            <span className={`--color-${theme.color}`}>projects</span>
         </div>
     );
 }
