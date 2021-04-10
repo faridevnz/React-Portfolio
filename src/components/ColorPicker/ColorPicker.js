@@ -26,9 +26,9 @@ export const ColorPicker = () => {
         <>
             <div className={`color-picker-trigger --${theme.color}`} onClick={onTrigger}></div>
             <div className={`color-picker-window ${isOpen ? '--open' : ''}`}>
-                <div onClick={() => onChangeColor(Colors.FUCSIA)} className={`__color-choise --fucsia ${!isOpen ? 'display-none' : ''}`}></div>
-                <div onClick={() => onChangeColor(Colors.ORANGE)} className={`__color-choise --orange ${!isOpen ? 'display-none' : ''}`}></div>
                 <div onClick={() => onChangeColor(Colors.AZURE)} className={`__color-choise --azure ${!isOpen ? 'display-none' : ''}`}></div>
+                <div onClick={() => onChangeColor(Colors.ORANGE)} className={`__color-choise --orange ${!isOpen ? 'display-none' : ''}`}></div>
+                <div onClick={() => onChangeColor(Colors.FUCSIA)} className={`__color-choise --fucsia ${!isOpen ? 'display-none' : ''}`}></div>
                 <br />
                 <div onClick={() => onToggleTheme()} className={`__color-choise --${theme.theme} ${!isOpen ? 'display-none' : ''}`}></div>
             </div>
