@@ -1,4 +1,3 @@
-import { ColorPicker } from "../../../components/ColorPicker/ColorPicker";
 import { BoxIcon } from "../../../components/BoxIcon/BoxIcon";
 import { ReactComponent as HiIcon } from "../../../icons/hi.svg";
 import { ContactBox } from "../../../components/ContactBox/ContactBox";
