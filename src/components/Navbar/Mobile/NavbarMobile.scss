@@ -1,0 +1,14 @@
+.navbar-mobile {
+
+    // theme
+    &--light {
+        background-color: var(--background-light);
+    }
+    &--dark {
+        background-color: var(--background-light);
+    }
+
+    height: var(--navbar-height);
+    transition: background-color 100ms linear;
+
+}

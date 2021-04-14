@@ -1,37 +1,14 @@
-import { useContext, useState } from 'react';
-import { ThemeContext } from '../../context/ThemeContext/ThemeContext';
-import './ColorPicker.scss'
-import { Colors } from '../../context/ThemeContext/models/colors';
-import { Themes } from '../../context/ThemeContext/models/themes';
+import { useContext } from "react";
+import { useMobile } from "../../hooks/useMobile/useMobile";
+import { ResponsiveContext } from "../../context/ResponsiveContext/ResponsiveContext";
+import { ColorPickerDesktop } from "./Desktop/ColorPickerDesktop";
+import { ColorPickerMobile } from "./Mobile/ColorPickerMobile";
 
 export const ColorPicker = () => {
-    // state and context
-    const [isOpen, setOpen] = useState(false);
-    const [theme, setTheme] = useContext(ThemeContext);
-    // functions
-    const onTrigger = () => { setOpen(prev => !prev) }
-    const onChangeColor = color => {
-        setTheme( prev => { return { ...prev, color: color } });
-        onTrigger();
-    }
-    const onToggleTheme = () => {
-        setTheme( prev => { 
-            var newTheme = prev.theme === Themes.DARK ? Themes.LIGHT : Themes.DARK;
-            return { ...prev, theme: newTheme } 
-        });
-        onTrigger();
-    }
+    const [breakpoint] = useContext(ResponsiveContext)
+    const isMobile = useMobile(breakpoint);
     // render
-    return(
-        <>
-            <div className={`color-picker-trigger --${theme.color}`} onClick={onTrigger}></div>
-            <div className={`color-picker-window ${isOpen ? '--open' : ''}`}>
-                <div onClick={() => onChangeColor(Colors.AZURE)} className={`__color-choise --azure ${!isOpen ? 'display-none' : ''}`}></div>
-                <div onClick={() => onChangeColor(Colors.ORANGE)} className={`__color-choise --orange ${!isOpen ? 'display-none' : ''}`}></div>
-                <div onClick={() => onChangeColor(Colors.FUCSIA)} className={`__color-choise --fucsia ${!isOpen ? 'display-none' : ''}`}></div>
-                <br />
-                <div onClick={() => onToggleTheme()} className={`__color-choise --${theme.theme} ${!isOpen ? 'display-none' : ''}`}></div>
-            </div>
-        </>
-    );
+    return isMobile
+        ? <ColorPickerMobile />
+        : <ColorPickerDesktop />
 }
